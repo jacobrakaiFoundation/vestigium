@@ -3,23 +3,44 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
     <meta name="theme-color" content="#203c39" />
+    <meta name="robots" content="noindex" />
     <title>Page not found · Vestigium</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="top">
-      <div class="brand">
-        <span class="mark" aria-hidden="true">v<span>·</span></span>
-        <span>vestigium<small>COURT OPERATIONS</small></span>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="mast">
+      <div class="bar">
+        <a class="brand" href="./" aria-label="Vestigium home">
+          <svg class="mark" viewBox="0 0 39 43" aria-hidden="true">
+            <rect width="39" height="43" rx="10" fill="#203c39" />
+            <text x="8" y="32" fill="#f4efe3" font-family="Georgia, serif" font-size="28">v</text>
+            <text x="23" y="18" fill="#d6b679" font-family="Georgia, serif" font-size="16">·</text>
+          </svg>
+          <span class="wordmark">Vestigium<small>Court operations</small></span>
+        </a>
       </div>
     </header>
     <main id="main">
-      <p class="eyebrow">NOT FOUND</p>
-      <h1>This page is not published.</h1>
-      <p class="lead">The public site is a single landing page. The case workspace and API are not hosted here.</p>
-      <p><a href="./">Return to Vestigium</a></p>
+      <section class="hero" aria-labelledby="missing-title">
+        <p class="eyebrow">Not found</p>
+        <h1 id="missing-title">This page is not published.</h1>
+        <p class="lead">
+          The public site is a single landing page. The case workspace and API are not hosted
+          here.
+        </p>
+        <p><a href="./">Return to Vestigium</a></p>
+      </section>
     </main>
+    <footer>
+      <p>Vestigium · A record of what comes next.</p>
+      <p>
+        <a href="https://jacobrakai.org/">Jacob Rakai Foundation</a>
+        · Fictional records · no court connection
+      </p>
+    </footer>
   </body>
 </html>

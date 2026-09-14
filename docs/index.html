@@ -3,61 +3,88 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
     <meta name="theme-color" content="#203c39" />
-    <meta name="description" content="Vestigium is a local court-operations workspace for county, surrogate, and clerk-style offices. It is a prototype, not a live court system." />
+    <meta
+      name="description"
+      content="Vestigium is a local court-operations workspace for county, surrogate, and clerk-style offices. It is a prototype, not a live court system."
+    />
     <meta name="robots" content="index,follow" />
     <title>Vestigium · Court operations</title>
+    <link rel="canonical" href="https://jacobrakaifoundation.github.io/vestigium/" />
+    <meta property="og:title" content="Vestigium · Court operations" />
+    <meta
+      property="og:description"
+      content="A local court-operations prototype for probate and General Equity. Not connected to any live court system."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jacobrakaifoundation.github.io/vestigium/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
-    <header class="top">
-      <div class="brand">
-        <span class="mark" aria-hidden="true">v<span>·</span></span>
-        <span>vestigium<small>COURT OPERATIONS</small></span>
+
+    <header class="mast">
+      <div class="bar">
+        <a class="brand" href="./" aria-label="Vestigium home">
+          <svg class="mark" viewBox="0 0 39 43" aria-hidden="true">
+            <rect width="39" height="43" rx="10" fill="#203c39" />
+            <text x="8" y="32" fill="#f4efe3" font-family="Georgia, serif" font-size="28">v</text>
+            <text x="23" y="18" fill="#d6b679" font-family="Georgia, serif" font-size="16">·</text>
+          </svg>
+          <span class="wordmark">Vestigium<small>Court operations</small></span>
+        </a>
+        <nav aria-label="On this page">
+          <a href="#scope">Scope</a>
+          <a href="#office">For the office</a>
+          <a href="#bounds">Bounds</a>
+        </nav>
       </div>
-      <span class="pill">LOCAL PROTOTYPE</span>
     </header>
 
     <main id="main">
-      <p class="eyebrow">PASSAIC COUNTY DEMONSTRATION</p>
-      <h1>A local workspace for the office. Not a replacement for the court.</h1>
-      <p class="lead">
-        Vestigium is a local court-operations prototype for county, surrogate, and clerk-style work
-        in probate and General Equity. It is not connected to NJ eCourts or any live court system.
-      </p>
-
-      <section class="notice" aria-label="Prototype bounds">
-        <p>
-          <strong>This is a local prototype.</strong>
-          The demonstration uses fictional records. Dates are entered by staff.
-          The application source remains private.
+      <section class="hero" id="scope" aria-labelledby="hero-title">
+        <p class="eyebrow">Passaic County demonstration</p>
+        <h1 id="hero-title">A local workspace for the office. Not a replacement for the court.</h1>
+        <p class="lead">
+          Vestigium is a local court-operations prototype for county, surrogate, and clerk-style
+          work in probate and General Equity. It is not connected to NJ eCourts or any live court
+          system.
         </p>
+        <p class="status">Local prototype</p>
       </section>
 
-      <div class="grid">
-        <section>
-          <p class="eyebrow">WHO IT IS FOR</p>
+      <aside class="notice" aria-label="Prototype bounds">
+        <p>
+          <strong>This is a local prototype.</strong>
+          The demonstration uses fictional records. Dates are entered by staff. The application
+          source remains private.
+        </p>
+      </aside>
+
+      <section class="register" id="office" aria-label="What the prototype covers">
+        <article>
+          <p class="eyebrow">Who it is for</p>
           <h2>Office work, as the office already does it.</h2>
           <p>
             Staff who keep a queue, intake, and numbering outside the core Judiciary systems —
             spreadsheets, paper, and local procedure. The first demonstration is framed for
-            Passaic County probate and General Equity. It does not assume every county works
-            the same way.
+            Passaic County probate and General Equity. It does not assume every county works the
+            same way.
           </p>
-        </section>
-        <section>
-          <p class="eyebrow">WHAT IT IS</p>
+        </article>
+        <article>
+          <p class="eyebrow">What it is</p>
           <h2>A workspace kept on the office’s machine.</h2>
           <p>
-            Vestigium holds a work queue, reviewed intake, office numbering, and parties or
-            estate facts the staff record. It is meant to sit beside existing practice until
-            an office has an approved source and a reason to connect further.
+            Vestigium holds a work queue, reviewed intake, office numbering, and parties or estate
+            facts the staff record. It is meant to sit beside existing practice until an office has
+            an approved source and a reason to connect further.
           </p>
-        </section>
-        <section>
-          <p class="eyebrow">WHAT IT IS NOT</p>
+        </article>
+        <article>
+          <p class="eyebrow">What it is not</p>
           <h2>Not eCourts. Not a public case file.</h2>
           <ul>
             <li>No connection to NJ eCourts or county filing systems</li>
@@ -65,23 +92,26 @@
             <li>No live records — sample and staff-entered data only</li>
             <li>Source, API, and case workspace are not published here</li>
           </ul>
-        </section>
-      </div>
+        </article>
+      </section>
 
-      <section class="action">
-        <h2>This is a local prototype</h2>
+      <section class="closing" id="bounds" aria-labelledby="bounds-title">
+        <h2 id="bounds-title">This is a local prototype</h2>
         <p>
-          The case application is not available on this site. The repository that contains it
-          is private. There is no public API to call and no invitation to run court records
-          on the open internet.
+          The case application is not available on this site. The repository that contains it is
+          private. There is no public API to call and no invitation to run court records on the
+          open internet.
         </p>
         <p class="source">Source is private.</p>
       </section>
     </main>
 
     <footer>
-      <span>Vestigium · A record of what comes next.</span>
-      <span>Fictional records · no court connection</span>
+      <p>Vestigium · A record of what comes next.</p>
+      <p>
+        <a href="https://jacobrakai.org/">Jacob Rakai Foundation</a>
+        · Fictional records · no court connection
+      </p>
     </footer>
   </body>
 </html>
